@@ -1,0 +1,896 @@
+/*body a{
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}*/
+html, body{
+    font-size: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background:#FFFFFF;
+}
+.banner{
+/*	background: url(../images/1.jpg) no-repeat 0px 0px;*/
+    background: url(/static/images/ludo1.jpg) no-repeat fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: auto;
+}
+
+.aglieinfo-dot{
+    background: url(../images/dott.png)repeat 0px 0px;
+    background-size: 2px;
+    -webkit-background-size: 2px;
+    -moz-background-size: 2px;
+    -o-background-size: 2px;
+    -ms-background-size: 2px;
+    padding: 3em 0;
+}
+.jarallax {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+/*-- banner --*/
+/*-- header --*/
+.agileits-logo {
+	text-align:center;
+}
+.agileits-logo h1{
+	margin:0;
+}
+.agileits-logo h1 a{
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #FF9800;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 6px;
+    padding: 0;
+}
+.agileits-logo h1 a span{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.navbar-default {
+    background: none;
+    border: none;
+}
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-collapse {
+    padding: 0;
+    box-shadow: none;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-nav {
+    float: none;
+    text-align: center;
+    background: none;
+    margin: 4em 0 0 0;
+}
+.header-top-info ul li{
+    display: inline-block;
+    float: none;
+}
+.navbar-nav li:after {
+    content: "";
+    position: absolute;
+    background: #FFFFFF;
+    height: 7px;
+    width: 7px;
+    top: 16px;
+    left: 0;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+.navbar-nav li.active:after {
+    background: none !important;
+    width: 0px !important;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    border: solid 2px rgba(255, 255, 255, 0);
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+	border: solid 2px #ffffff;
+    background: none;
+    border-radius: 20px;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #ffffff;
+}
+.navbar-nav > li > a {
+    font-size: 1em;
+    padding: .5em 2em;
+    margin: 0 1em;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    background: none;
+    border-radius: 20px;
+}
+/*-- //header --*/
+/*--slider--*/
+#slider2,
+#slider3 {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  margin: 0 auto;
+}
+.rslides_tabs li:first-child {
+  margin-left: 0;
+}
+.rslides_tabs .rslides_here a {
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  font-weight: bold;
+}
+.events {
+  list-style: none;
+}
+.callbacks_container {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.callbacks {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.callbacks li {
+  position: absolute;
+  width: 100%;
+}
+.callbacks img {
+  position: relative;
+  z-index: 1;
+  height: auto;
+  border: 0;
+}
+.callbacks .caption {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	font-size: 20px;
+	text-shadow: none;
+	color: #fff;
+	left: 0;
+	right: 0;
+	padding: 10px 20px;
+	margin: 0;
+	max-width: none;
+	top: 10%;
+	text-align: center;
+}
+.callbacks_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    bottom: 109px;
+    left: 0;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background: transparent url(../images/arrows.png) no-repeat left top;
+}
+.callbacks_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+ }
+ .callbacks_nav.prev {
+    right: auto;
+    background-position: left top;
+    left: 0;
+}
+#slider3-pager a {
+  display: inline-block;
+}
+#slider3-pager span{
+  float: left;
+}
+#slider3-pager span{
+	width:100px;
+	height:15px;
+	background:#fff;
+	display:inline-block;
+	border-radius:30em;
+	opacity:0.6;
+}
+#slider3-pager .rslides_here a {
+  background: #FFF;
+  border-radius:30em;
+  opacity:1;
+}
+#slider3-pager a {
+  padding: 0;
+}
+#slider3-pager li{
+	display:inline-block;
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+}
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display:none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.rslides li{
+  position: relative;
+  display: block;
+  float: left;
+}
+.rslides img {
+  height: auto;
+  border: 0;
+  }
+.callbacks_tabs{
+    list-style: none;
+    position: absolute;
+    top: 116%;
+    left: 48%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    z-index: 999;
+}
+.slider-top span{
+	font-weight:600;
+}
+.callbacks_tabs li{
+    display: inline-block;
+    margin: 0;
+}
+/*----*/
+.callbacks_tabs a{
+ visibility: hidden;
+}
+.callbacks_tabs a:after {
+    content: "\f111";
+    font-size: 0;
+    font-family: FontAwesome;
+    visibility: visible;
+    display: block;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+.callbacks_here a:after{
+    background: #ff9800;
+    border: 2px solid #ffffff;
+}
+/*-- //slider --*/
+/*-- w3layouts-banner-info --*/
+.w3layouts-banner-info {
+    padding: 8em 0;
+}
+.banner_text {
+    text-align: center;
+}
+.banner_text h3 {
+    color:  #FF9800;
+    font-size: 7em;
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+.banner_text p {
+    color: #FF9800;
+    font-size: 1em;
+    margin: 2em 0;
+    letter-spacing: 2px;
+}
+.w3-button {
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    z-index: 1;
+}
+.w3-button a {
+    color: #FFFFFF;
+    font-size: 1em;
+    padding: .5em 1em;
+    border: solid 2px #FF9800;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 0;
+    background:#FF9800;
+}
+.w3-button a:hover {
+    color: #FFFFFF;
+    background:none;
+    border: solid 2px #FFFFFF;
+}
+/*-- //w3layouts-banner-info --*/
+/*-- about--*/
+.about,.testimonial-dot{
+    padding: 4em 0;
+}
+.welcome{
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 1em;
+	text-align:center;
+}
+.agileits-title h2,.agileits-title h3{
+    font-size: 4em;
+    color: #ff9800;
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.agileits-title p {
+    font-size: 1em;
+    color: #999;
+    line-height: 1.8em;
+    margin: 1em auto 0;
+    width: 65%;
+} 
+.about-w3lsrow {
+    margin: 4em 0 0 0;
+}
+.w3about-img {
+    background: url(../images/ludo2.png)no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 30em;
+    padding: 0;
+	position:relative;
+}
+.w3about-text {
+    background: #f2f2f2;
+    position: absolute;
+    width: 56%;
+    padding: 3em;
+    right: -30%;
+    top: 27%;
+}
+.w3about-text h5 {
+    font-size: 2.5em;
+    color: #212121;
+    margin: 0;
+} 
+.w3about-text p{
+	color:#999999;
+	font-size:.9em;
+	line-height:1.8em;
+	margin:1em 0 0 0;
+}
+/*-- //about--*/
+/*-- markets --*/
+.wthree-heading h3,.agileits-top-heading h2 {
+    color: #212121;
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.wthree-heading{
+	text-align:center;
+}
+.w3-agile-testimonial{
+    margin: 4em 0 0 0;
+}
+/*-- //markets --*/
+/*-- portfolio --*/
+
+/*-- testimonial --*/
+.testimonial{
+	background:url(../images/ludo1.jpg) no-repeat 0px 0px;
+	background-size:cover;
+}
+.testimonial-dot{
+    background: url(../images/dott.png)repeat 0px 0px;
+    background-size: 2px;
+    -webkit-background-size: 2px;
+    -moz-background-size: 2px;
+    -o-background-size: 2px;
+    -ms-background-size: 2px;
+}
+.testimonial-heading h3{
+	color:#FFFFFF;
+}
+.testimonial-heading h5{
+	color:#FFFFFF;
+}
+.testimonial-img-grid{
+    width: 28%;
+    margin: 0 auto;
+}
+.testimonial-img{
+	float: left;
+    width: 26.33%;
+}
+.testimonial-img:nth-child(2){
+	margin:0 2em;
+}
+.testimonial-img img{
+	width:100%;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-ms-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+}
+.t-img1 img,.t-img2 img{
+	opacity: 0.6;
+}
+.testimonial-img-info{
+	margin:2em 0 0 0;
+}
+.testimonial-img-info{
+	text-align:center;
+}
+.testimonial-img-info p{
+    color: #FFFFFF;
+    font-size: .9em;
+    margin:0 auto;
+	width:60%;
+    line-height: 1.8em;	
+}
+.testimonial-img-info h5{
+    color: #FFFFFF;
+    font-size: 1em;
+    margin: 1em 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.testimonial-img-info h6{
+	color: #FFFFFF;
+    font-size: .9em;
+    margin: 1em 0;
+    font-style: italic;
+}
+/*-- //testimonial --*/
+/*-- team --*/
+
+/*-- footer --*/ 
+.footer{
+	background: #333;
+	padding:4em 0;
+}  
+.foot
+{
+    background-color: #424040;
+    height: 200px;
+}
+.cpy
+{
+    background-color: #212121;
+    height: 50px;
+    padding-top: 20px;
+    color: white;
+}
+.footer-title h3 {
+    font-size: 1.5em;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.amet-sed p {
+    margin: 2em 0 0 0;
+    color: #999999;
+    font-size: .9em;
+    line-height: 1.8em;
+}
+.amet-sed h5
+{
+    font-size: 1.5em;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.amet-medium h5
+{
+     font-size: 1.5em;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.amet-medium p {
+  margin: 2em 0 0 0;
+    color: #999999;
+    font-size: .9em;
+    line-height: 1.8em;
+ }
+.amet-medium p a:hover{
+	color:#FFFFFF;
+}
+.amet-sed .w3social-icons {
+    margin-top: 1em;
+}
+/*-- social-icons --*/
+.agileinfo-social-grids{
+    margin:2em 0 0 0;
+}
+.agileinfo-social-grids ul{
+	padding:0;
+	margin:0;
+}
+.agileinfo-social-grids ul li{
+    display: inline-block;
+}
+.agileinfo-social-grids ul li a {
+	color: #FFFFFF;
+    text-align: center;
+}
+.agileinfo-social-grids ul li a i.fa{
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.agileinfo-social-grids ul li a i.fa.fa-facebook:hover {
+    color: #3b5998;
+}
+.agileinfo-social-grids ul li a i.fa.fa-twitter{
+	margin:0 1em;
+}
+.agileinfo-social-grids ul li a i.fa.fa-twitter:hover{
+	color: #55acee;
+}
+.agileinfo-social-grids ul li a i.fa.fa-rss{
+	margin:0 1em 0 0;
+}
+.agileinfo-social-grids ul li a i.fa.fa-rss:hover{
+	color: #f26522;
+}
+.agileinfo-social-grids ul li a i.fa.fa-vk:hover{
+	color: #45668e;
+}
+/*-- //footer --*/
+/*-- copyright --*/
+
+/*-- //copyright --*/
+/*-- to-top --*/
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: 2%;
+	overflow: hidden;
+	z-index: 999; 
+	width: 40px;
+	height: 40px;
+	border: none;
+	text-indent: 100%;
+	background: url(../images/arrow.png) no-repeat 0px 0px;
+}
+#toTopHover {
+	width: 40px;
+	height: 40px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
+/*-- //to-top --*/
+/*-- responsive --*/
+@media(max-width:1080px){
+     .banner
+    {
+        background-size: 1080px 400px;
+    }
+	.w3about-text {
+		width: 63%;
+		right: -35%;
+	}
+	.testimonial-img-grid {
+		width: 35%;
+	}
+}
+@media(max-width:991px){
+     .banner
+    {
+        background-size: 991px 400px;
+    }
+	.navbar-nav > li > a {
+		padding: .5em 1em;
+		margin: 0 .8em;
+	}
+	.banner_text h3 {
+		font-size: 5em;
+	}
+	.w3layouts-banner-info {
+		padding: 5em 0;
+	}
+	.w3about-text {
+		width: 89%;
+	}
+	.testimonial-img-grid {
+		width: 50%;
+	}
+
+	.testimonial-img-info p {
+		width: 85%;
+	}
+	.agileits-title p {
+		width: 95%;
+	}
+
+	.amet-medium {
+		margin: 2em 0;
+	}
+
+}
+@media(max-width:768px){
+     .banner
+    {
+        background-size: 768px 400px;
+    }
+	.callbacks_tabs {
+		left: 47%;
+	}
+}
+@media(max-width:736px){
+     .banner
+    {
+        background-size: 736px 400px;
+    }
+	.agileits-logo h1 a {
+		font-size: 1.5em;
+	}
+	.navbar-toggle {
+		float: none;
+		margin-right: 0;
+	}
+	.navbar {
+		text-align: center;
+	}
+	.navbar-nav {
+	    margin: 1em 0;
+	}
+	.header-top-info ul li {
+		display: block;
+	}
+	.navbar-nav li:after {
+		background: none;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	    border: none;
+		position: absolute;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.84);
+		z-index: 9999;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #fff;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background: #FF9800;
+	}
+
+	.w3about-text {
+		width: 60%;
+		right: 0;
+	}
+
+	.navbar-nav > li > a {
+		margin: 1em .5em;
+	}
+}
+@media(max-width:667px){
+     .banner
+    {
+        background-size: 667px 400px;
+    }
+}
+@media (max-width:640px) {
+     .banner
+    {
+        background-size: 640px 400px;
+    }
+
+}
+@media(max-width:600px){
+     .banner
+    {
+        background-size: 600px 400px;
+    }
+	.banner_text h3 {
+		font-size: 4em;
+	}
+	.w3layouts-banner-info {
+		padding: 4em 0;
+	}
+	.w3about-text {
+		width: 72%;
+	}
+	.testimonial-img-grid {
+		width: 60%;
+	}
+
+}
+@media(max-width:568px){
+     .banner
+    {
+        background-size: 568px 400px;
+    }
+}
+@media(max-width:480px){
+     .banner
+    {
+        background-size: 480px 400px;
+    }
+	.agileits-logo h1 a {
+		font-size: 1.2em;
+	}
+	.navbar-nav > li > a {
+		margin: .5em .5em;
+	}
+	.navbar-nav > li > a {
+		margin: .5em .5em;
+	}
+	.callbacks_tabs {
+		left: 45%;
+		top: 108%;
+	}
+	.agileinfo-dot {
+		padding: 2em 0;
+	}
+	.w3layouts-banner-info {
+		padding: 3em 0;
+	}
+	.testimonial-img:nth-child(2) {
+		margin: 0 1em;
+	}
+	.testimonial-img-info p {
+		width: 95%;
+	}
+	.agileits-title h2, .agileits-title h3 {
+		font-size: 3em;
+	}
+
+
+	.w3about-text {
+		padding: 2em;
+	}
+}
+@media(max-width:414px){
+     .banner
+    {
+        background-size: 414px 400px;
+    }
+	.banner_text h3 {
+		font-size: 3em;
+	}
+	.w3about-img {
+		min-height: 22em;
+	}
+	.w3about-text {
+		padding: 1em;
+	}
+	.w3about-text h5 {
+		font-size: 2em;
+	}
+	.w3about-text {
+		top: 20%;
+	}
+	.about, .testimonial-dot{
+		padding: 2em 0;
+	}
+	.w3-agile-testimonial{
+		margin: 2em 0 0 0;
+	}
+
+	.agileits-title h2, .agileits-title h3 {
+		font-size: 2.5em;
+	}
+
+	.about-w3lsrow {
+		margin: 2em 0 0 0;
+	}
+}
+@media(max-width:384px){
+	.agileits-logo h1 a {
+		font-size: 1em;
+	}
+	.banner_text p {
+		margin: 1em 0;
+		letter-spacing: 1px;
+	}
+	.callbacks_nav {
+		bottom: 25px;
+	}
+	.w3layouts-banner-info {
+		padding: 2em 0;
+	}
+	.callbacks_tabs {
+		left: 44%;
+	}
+	.agileits-icon-grid {
+		padding: 1em;
+	}
+	.agileits-team-grid:nth-child(4) {
+		margin: 0 !important;
+	}
+	.blog-left {
+		float: none;
+		width: 100%;
+	}
+
+	.footer {
+		padding: 2em 0;
+	}
+
+	.agileits-title p {
+		font-size: .9em;
+	}
+}
+@media(max-width:320px){
+	.agileits-logo h1 a {
+		font-size: .9em;
+	}
+	.banner_text h3 {
+		font-size: 2em;
+	}
+	.callbacks_tabs {
+		left: 43%;
+	}
+	.w3-button {
+		padding: .5em;
+	}
+	.w3about-text {
+		width: 87%;
+	}
+
+	.agileits-title h2, .agileits-title h3 {
+		font-size: 2em;
+	}
+
+}
+/*-- //responsive --*/

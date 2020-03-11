@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>LUDO GAME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login1.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/chocolat.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css') }}">
+
+<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />
+<!--// css -->
+<link href="static/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="static/css/chocolat.css" type="text/css" media="all">
+<!-- font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<script src="static/js/jquery-1.11.1.min.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<script>
+	jQuery(document).ready(function($)
+	{
+		$(".scroll").click(function(event)
+		{
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+</head>
+<body>
+	<div class="banner">
+		<div class="agileinfo-dot">
+			<div class="agileits-logo">
+				<h1><a href="index.html">Ludo <span>Game</span></a></h1>
+			</div>
+
+			<div class="header-top-info">
+				<nav class="navbar navbar-default">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<nav>
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#about" class="scroll">About</a></li>
+								<li><a href="login.html" >Profile</a></li>
+							</ul>
+						</nav>
+					</div>
+				</nav>
+			</div>
+
+
+		<div class="w3layouts-banner-info">
+				<div class="container">
+					<div class="w3layouts-banner-slider">
+						<div class="w3layouts-banner-top-slider">
+							<div class="slider">
+								<div class="callbacks_container">
+									<ul class="rslides callbacks callbacks1" id="slider4">
+										<li>
+											<div class="banner_text">
+												<h3>Ludo</h3>
+												<p style="font-weight: bold">One of the best indoor game.</p>
+												<div style="margin-top: 10px"></div>
+												<div class="w3-button"></div>
+												<div class="w3-button"></div>
+												<div class="w3-button"></div>
+												<div class="w3-button"></div>
+												<div class="w3-button"></div>
+											</div>
+										</li>
+										<li>
+											<div class="banner_text">
+												<h3>Never give up.</h3>
+												<p style="font-weight: bold">I play to win, whether during practice or a real game.</p>
+												<div class="w3-button"></div>
+												<div class="w3-button"></div>
+												<div class="w3-button"></div>
+												<div class="w3-button"></div>
+												<div class="w3-button"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="clearfix"> </div>
+								<script src="static/js/responsiveslides.min.js"></script>
+								<script>
+									// You can also use "$(window).load(function() {"
+									$(function () {
+									  // Slideshow 4
+									  $("#slider4").responsiveSlides({
+										auto: true,
+										pager:true,
+										nav:true,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+										  $('.events').append("<li>before event fired.</li>");
+										},
+										after: function () {
+										  $('.events').append("<li>after event fired.</li>");
+										}
+									  });
+
+									});
+								 </script>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="about" id="about">
+		<div class="container">
+			<div class="welcome">
+				<div class="agileits-title">
+					<h2>Welcome</h2>
+					<p>to my MultiPlayer online ludo game.Its a great game but it might kill you. Anyway, we wish you best of luck and stay safe.</p>
+				</div>
+			</div>
+			<div class="about-w3lsrow">
+				<div class="col-md-7 col-sm-7 w3about-img">
+					<div class="w3about-text">
+						<h5 class="w3l-subtitle">- About Me</h5>
+						<p>Hey Everyone! I am a  student of DBS and this application is my term project. I gave my best and hope so you will enjoy playing this game as much as I enjoyed making it.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<script src="static/js/classie.js"></script>
+	<script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
+
+	<footer class="page-footer font-small teal pt-4">
+
+
+	<script src="static/js/jarallax.js"></script>
+	<!-- <script src="js/SmoothScroll.min.js"></script> -->
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<script src="static/js/responsiveslides.min.js"></script>
+	<script type="text/javascript" src="static/js/move-top.js"></script>
+	<script type="text/javascript" src="static/js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+
+	<script src="static/js/jquery.filterizr.js"></script>
+		<script src="static/js/controls.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.filtr-container').filterizr();
+			});
+		</script>
+		<script src="static/js/jquery.chocolat.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.filtr-item a').Chocolat();
+			});
+		</script>
+</body>
+</html>
